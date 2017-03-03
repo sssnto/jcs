@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>LeaRun敏捷开发框架</title>
+    <title>JC System</title>
     <link rel="stylesheet" href="/static/js/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/font-awesome.min.css">
     <link rel="stylesheet" href="/static/css/index.css">
@@ -14,9 +14,9 @@
 <div class="wrapper">
     <!--头部信息-->
     <header class="main-header">
-        <a href="http://www.learun.cn/adms/index.html" target="_blank" class="logo">
-            <span class="logo-mini">LR</span>
-            <span class="logo-lg">learun<strong>敏捷框架</strong></span>
+        <a href="/main" target="_blank" class="logo">
+            <span class="logo-mini">JC</span>
+            <span class="logo-lg">JC<strong>System</strong></span>
         </a>
         <nav class="navbar navbar-static-top">
             <a class="sidebar-toggle">
@@ -93,11 +93,7 @@
             <nav class="page-tabs menuTabs">
                 <div class="page-tabs-content" style="margin-left: 0px;">
                     <a href="javascript:;" class="menuTab active" data-id="/dashboard">欢迎首页</a>
-                    <a href="javascript:;" class="menuTab" data-id="/Home/About" style="padding-right: 15px;">平台介绍</a>
-                    <a href="javascript:;" class="menuTab" data-id="/SystemManage/Organize/Index">机构管理 <i class="fa fa-remove"></i></a>
-                    <a href="javascript:;" class="menuTab" data-id="/SystemManage/Role/Index">角色管理 <i class="fa fa-remove"></i></a>
-                    <a href="javascript:;" class="menuTab" data-id="/SystemManage/Duty/Index">岗位管理 <i class="fa fa-remove"></i></a>
-                    <a href="javascript:;" class="menuTab" data-id="/SystemManage/User/Index">用户管理 <i class="fa fa-remove"></i></a>
+                    <#--<a href="javascript:;" class="menuTab" data-id="/Home/About" style="padding-right: 15px;">平台介绍</a>-->
                 </div>
             </nav>
             <button class="roll-nav roll-right tabRight">

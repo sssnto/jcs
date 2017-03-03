@@ -1,4 +1,4 @@
-package com.github.tinyking.jcs.web;
+package com.github.tinyking.jcs.web.module.base.controller;
 
 /**
  * Created by wangjianchao1 on 2017/3/2.

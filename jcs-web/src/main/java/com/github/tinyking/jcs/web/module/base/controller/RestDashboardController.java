@@ -1,4 +1,4 @@
-package com.github.tinyking.jcs.web.module.controller;
+package com.github.tinyking.jcs.web.module.base.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
