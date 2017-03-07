@@ -8955,7 +8955,7 @@ var BasicView = fcViews.basic = View.extend({
 
 	initialize: function() {
 		this.dayGrid = new DayGrid(this);
-		this.coordMap = this.dayGrid.coordMap; // the view's date-to-cell mapping is identical to the subcomponent's
+		this.coordMap = this.dayGrid.coordMap; // the view's date-to-cell mapper is identical to the subcomponent's
 	},
 
 

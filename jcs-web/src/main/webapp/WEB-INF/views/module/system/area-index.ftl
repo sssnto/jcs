@@ -616,6 +616,7 @@
 
     $(function () {
         $('#example2').DataTable({
+            'showRowNumber': true,
             "paging": false,
             "lengthChange": false,
             "searching": false,

@@ -73,7 +73,7 @@ var FixedColumns = function ( dt, init ) {
 		init = {};
 	}
 
-	// Use the DataTables Hungarian notation mapping method, if it exists to
+	// Use the DataTables Hungarian notation mapper method, if it exists to
 	// provide forwards compatibility for camel case variables
 	var camelToHungarian = $.fn.dataTable.camelToHungarian;
 	if ( camelToHungarian ) {
@@ -1022,7 +1022,7 @@ FixedColumns.prototype = /** @lends FixedColumns.prototype */{
 			/* To ensure that we copy cell classes exactly, regardless of colspan, multiple rows
 			 * etc, we make a copy of the header from the DataTable again, but don't insert the
 			 * cloned cells, just copy the classes across. To get the matching layout for the
-			 * fixed component, we use the DataTables _fnDetectHeader method, allowing 1:1 mapping
+			 * fixed component, we use the DataTables _fnDetectHeader method, allowing 1:1 mapper
 			 */
 			aoCloneLayout = this._fnCopyLayout( dt.aoHeader, aiColumns );
 			aoFixedHeader=[];

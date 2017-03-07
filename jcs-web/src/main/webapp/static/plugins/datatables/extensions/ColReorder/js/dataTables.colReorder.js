@@ -141,7 +141,7 @@ $.fn.dataTableExt.oApi.fnColReorder = function ( oSettings, iFrom, iTo )
 	}
 
 	/*
-	 * Calculate the new column array index, so we have a mapping between the old and new
+	 * Calculate the new column array index, so we have a mapper between the old and new
 	 */
 	var aiMapping = [];
 	for ( i=0, iLen=iCols ; i<iLen ; i++ )
