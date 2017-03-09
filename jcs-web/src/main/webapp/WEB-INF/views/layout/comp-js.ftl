@@ -44,11 +44,19 @@
 <script src="/static/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="/static/plugins/datatables/dataTables.bootstrap.min.js"></script>
 
+<!-- jqgrid -->
+<script src="/static/plugins/jQgrid/js/jquery.jqGrid.min.js"></script>
+<script src="/static/plugins/jQgrid/js/i18n/grid.locale-cn.js"></script>
+
 <!-- AdminLTE for demo purposes -->
 <script src="/static/js/demo.js"></script>
 
 <!-- ztree -->
 <script src="/static/plugins/ztree/js/jquery.ztree.all.min.js"></script>
+
+<!-- layer -->
+<script src="/static/plugins/layer/layer.js"></script>
+
 
 <script>
     $(function () {

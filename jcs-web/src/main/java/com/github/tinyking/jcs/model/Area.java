@@ -159,4 +159,19 @@ public class Area {
     public void setYn(Boolean yn) {
         this.yn = yn;
     }
+
+    @Override
+    public String toString() {
+        return "Area{" +
+                "id=" + id +
+                ", areaCode='" + areaCode + '\'' +
+                ", areaName='" + areaName + '\'' +
+                ", parentCode='" + parentCode + '\'' +
+                ", createUser='" + createUser + '\'' +
+                ", createTime=" + createTime +
+                ", updateUser='" + updateUser + '\'' +
+                ", updateTime=" + updateTime +
+                ", yn=" + yn +
+                '}';
+    }
 }

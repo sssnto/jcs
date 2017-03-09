@@ -12,9 +12,5 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("system")
 public class SystemController {
     
-    @Pjax
-    @RequestMapping(value = "area/index", method = RequestMethod.GET)
-    public String areaIndex() {
-        return "module/system/area-index";
-    }
+   
 }

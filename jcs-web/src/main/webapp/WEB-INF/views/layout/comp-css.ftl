@@ -24,6 +24,15 @@
 <!-- DataTables -->
 <link rel="stylesheet" href="/static/plugins/datatables/dataTables.bootstrap.css">
 
+<!-- jqrid -->
+<#--<link rel="stylesheet" href="/static/plugins/jQgrid/css/ui.jqgrid.css">-->
+<link rel="stylesheet" href="/static/plugins/jQgrid/css/ui.jqgrid-bootstrap.css">
+<#--<link rel="stylesheet" href="/static/plugins/jQgrid/css/ui.jqgrid-bootstrap-ui.css">-->
+
+
 <!-- ztree -->
 <link rel="stylesheet" href="/static/plugins/ztree/css/zTreeStyle/zTreeStyle.css">
+
+<!-- layer -->
+<link rel="stylesheet" href="/static/plugins/layer/skin/default/layer.css">
 
