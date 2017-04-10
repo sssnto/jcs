@@ -32,7 +32,7 @@
 
 <!-- ztree -->
 <link rel="stylesheet" href="/static/plugins/ztree/css/zTreeStyle/zTreeStyle.css">
-
+<link rel="stylesheet" href="/static/plugins/ztree/css/metroStyle/metroStyle.css">
 <!-- layer -->
 <link rel="stylesheet" href="/static/plugins/layer/skin/default/layer.css">
 

@@ -1,12 +1,12 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        行政区域
+        通用字典
     </h1>
     <ol class="breadcrumb">
         <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
         <li><a href="#">系统管理</a></li>
-        <li class="active">行政区域</li>
+        <li class="active">通用字典</li>
     </ol>
 </section>
 
@@ -19,7 +19,7 @@
             <!-- 目录信息 -->
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">目录信息</h3>
+                    <h3 class="box-title">分类</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body" style="min-height: 500px; overflow: auto;">
@@ -86,45 +86,6 @@
 </section>
 <!-- /.content -->
 
-<script type="text/javascript">
+<#include "dict-add.ftl">
 
-    $(function () {
-        $("#jqGrid").jqGrid({
-            caption: '角色列表',
-            url: '/rest/system/area/table',
-            mtype: "GET",
-            styleUI: 'Bootstrap',
-            datatype: "json",
-            colModel: [
-                {label: 'ID', name: 'id', key: true, sortable: false},
-                {label: '编码', name: 'areaCode', sortable: false},
-                {label: '名称', name: 'areaName', sortable: false},
-                {label: '名称', name: 'areaName', sortable: false},
-                {label: '名称', name: 'areaName', sortable: false},
-                {label: '名称', name: 'areaName', sortable: false},
-            ],
-            rownumbers: true, // show row numbers
-            rownumWidth: 35, // the width of the row numbers columns
-            width: 790,
-            altRows: true,
-            height: 300,
-        });
-
-        $('#btnAreaSearch').click(function () {
-            $("#jqGrid").jqGrid('setGridParam', {
-                url: "/rest/system/area/table",
-                postData: {'title': 'dddd', 'sn': '222'}, //发送数据 
-                page: 1
-            }).trigger("reloadGrid"); //重新载入 
-        });
-
-        $('#btnAreaRefresh').unbind().click(function() {
-            $('#txtSearch').val('');
-            $('#btnAreaSearch').trigger('click'); 
-        });
-    });
-
-</script>
-
-
-<script type="text/javascript" src="/static/js/module/system/area-index.js"></script>
+<script type="text/javascript" src="/static/js/module/system/dict-index.js"></script>

@@ -15,7 +15,7 @@ import java.util.List;
  * Created by wangjianchao1 on 2017/3/8.
  */
 @RestController
-@RequestMapping("system/area")
+@RequestMapping("rest/system/area")
 public class AreaRestController {
     
     @Autowired
