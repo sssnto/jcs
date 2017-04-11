@@ -36,3 +36,8 @@
 <!-- layer -->
 <link rel="stylesheet" href="/static/plugins/layer/skin/default/layer.css">
 
+<!--自定义css-->
+<link rel="stylesheet" href="/static/css/jcs.css">
+
+
+

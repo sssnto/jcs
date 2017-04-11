@@ -44,7 +44,7 @@ $(function () {
                 // alert('请求失败');
             },
             success: function (data) { //请求成功后处理函数。    
-                console.log(data);
+                // console.log(data);
                 treeNodes = data;   //把后台封装好的简单Json格式赋给treeNodes  
             }
         });

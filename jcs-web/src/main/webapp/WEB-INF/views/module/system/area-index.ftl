@@ -106,6 +106,9 @@
             rownumbers: true, // show row numbers
             rownumWidth: 35, // the width of the row numbers columns
             width: 790,
+            rowNum:10,
+            rowList:[10,20,30],
+            pager: '#jqGridPager',
             altRows: true,
             height: 300,
         });

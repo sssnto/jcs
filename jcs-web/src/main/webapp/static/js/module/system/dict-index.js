@@ -80,16 +80,56 @@ $(function () {
     });
     
     
-    $('#btn-area-new').click(function () {
+    $('#btnNew').click(function () {
         //页面层-自定义
         layer.open({
-            area: ['600px', '300px'],
+            area: ['400px', '500px'],
             type: 1,
             title: false,
             closeBtn: 1,
+            btn:['确定', '关闭'],
+            yes: function (index) {
+                layer.close(index);
+            },
             shadeClose: true,
             skin: 'yourclass',
             content: $('#dlgDictAdd')
+        });
+    });
+
+
+    $('#btnEdit').click(function () {
+        //页面层-自定义
+        layer.open({
+            area: ['400px', '500px'],
+            type: 1,
+            title: false,
+            closeBtn: 1,
+            btn:['确定', '关闭'],
+            yes: function (index) {
+                layer.close(index);
+            },
+            shadeClose: true,
+            skin: 'yourclass',
+            content: $('#dlgDictEdit')
+        });
+    });
+
+
+    $('#btnView').click(function () {
+        //页面层-自定义
+        layer.open({
+            area: ['400px', '500px'],
+            type: 1,
+            title: false,
+            closeBtn: 1,
+            btn:['关闭'],
+            yes: function (index) {
+                layer.close(index);
+            },
+            shadeClose: true,
+            skin: 'yourclass',
+            content: $('#dlgDictView')
         });
     });
 });

@@ -36,7 +36,7 @@
                 <div class="col-xs-12">
                     <div class="box box-primary">
                         <div class="box-header">
-                            <h3 class="box-title">区域信息</h3>
+                            <h3 class="box-title">信息</h3>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body" style="min-height: 500px;">
@@ -53,13 +53,13 @@
                                     <div class="btn-group pull-right">
                                         <button id="btnAreaRefresh" class="btn btn-default btn-flat"><i class="fa fa-refresh"></i> 刷新
                                         </button>
-                                        <button id="btn-area-new" class="btn btn-default btn-flat"><i
+                                        <button id="btnNew" class="btn btn-default btn-flat"><i
                                                 class="fa fa-plus"></i> 新增
                                         </button>
-                                        <button class="btn btn-default btn-flat"><i class="fa fa-edit"></i> 编辑</button>
-                                        <button class="btn btn-default btn-flat"><i class="fa fa-trash-o"></i> 删除
+                                        <button id="btnEdit" class="btn btn-default btn-flat"><i class="fa fa-edit"></i> 编辑</button>
+                                        <button id="btnDelete" class="btn btn-default btn-flat"><i class="fa fa-trash-o"></i> 删除
                                         </button>
-                                        <button class="btn btn-default btn-flat"><i class="fa fa-list-alt"></i> 详细
+                                        <button id="btnView" class="btn btn-default btn-flat"><i class="fa fa-list-alt"></i> 详细
                                         </button>
                                     </div>
                                 </div>
@@ -87,5 +87,7 @@
 <!-- /.content -->
 
 <#include "dict-add.ftl">
+<#include "dict-edit.ftl">
+<#include "dict-view.ftl">
 
 <script type="text/javascript" src="/static/js/module/system/dict-index.js"></script>

@@ -1,5 +1,6 @@
 package com.github.tinyking.jcs.web.module.system.controller;
 
+import com.github.tinyking.jcs.GridDto;
 import com.github.tinyking.jcs.model.Area;
 import com.github.tinyking.jcs.service.AreaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,10 +18,10 @@ import java.util.List;
 @RestController
 @RequestMapping("rest/system/area")
 public class AreaRestController {
-    
+
     @Autowired
     private AreaService areaService;
-    
+
     @RequestMapping("tree")
     public List<Area> treeData() {
         List<Area> areas = areaService.selectByExample(new Example(Area.class));
@@ -28,12 +29,16 @@ public class AreaRestController {
         System.out.println(areas);
         return areas;
     }
-    
-    @RequestMapping("table")
-    public List<Area> tableData(@RequestParam(value = "parentCode", defaultValue = "0") String parentCode) {
-        List<Area> areas = areaService.selectByExample(new Example(Area.class));
 
-        System.out.println(areas);
-        return areas;
+    @RequestMapping("table")
+    public GridDto tableData(@RequestParam(value = "parentCode", defaultValue = "0") String parentCode) {
+        GridDto gridDto = new GridDto();
+        gridDto.setPage(1);
+        gridDto.setTotal(10);
+
+        List<Area> areas = areaService.selectByExample(new Example(Area.class));
+        gridDto.setRecords(areas.size());
+        gridDto.setRows(areas);
+        return gridDto;
     }
 }

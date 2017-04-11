@@ -1,8 +1,8 @@
 
-<!-- 目录信息 -->
-<div class="box box-primary" id="dlgDictAdd" style="display: none;">
+<!-- 编辑页面 -->
+<div class="box box-primary" id="dlgDictEdit" style="display: none;">
     <div class="box-header with-border">
-        <h3 class="box-title">新建</h3>
+        <h3 class="box-title">编辑</h3>
     </div>
     <!-- /.box-header -->
     <div class="box-body form-horizontal">
