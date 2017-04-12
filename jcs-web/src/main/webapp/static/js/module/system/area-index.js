@@ -1,6 +1,6 @@
 $(function () {
     $('#btn-area-new').unbind('click').bind('click', function () {
-        console.log(111);
+        // console.log(111);
 
         //iframe层-父子操作
         layer.open({

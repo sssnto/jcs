@@ -19,8 +19,8 @@
 <script src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- Morris.js charts -->
-<#--<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>-->
-<#--<script src="/static/plugins/morris/morris.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="/static/plugins/morris/morris.min.js"></script>
 
 <!-- Sparkline -->
 <script src="/static/plugins/sparkline/jquery.sparkline.min.js"></script>
@@ -67,4 +67,11 @@
     $(function () {
         $(".sidebar-menu").pjax('a', '#pjax-container');
     })
+
+    //
+    function console(msg) {
+        if (window.console && console.log) {
+            console.log(msg);
+        }
+    }
 </script>

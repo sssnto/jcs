@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * Created by wangjianchao1 on 2017/4/12.
  */
-@Service
+@Service("menuDirective")
 public class MenuDirective implements TemplateDirectiveModel {
     
     @Autowired

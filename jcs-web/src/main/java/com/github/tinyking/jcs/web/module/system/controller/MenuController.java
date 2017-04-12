@@ -17,4 +17,11 @@ public class MenuController {
     public String index() {
         return "module/system/menu-index";
     }
+
+
+
+    @RequestMapping("add")
+    public String areaAdd() {
+        return "module/system/menu-add";
+    }
 }
