@@ -17,9 +17,11 @@
 </script>
 <!-- Bootstrap 3.3.6 -->
 <script src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+
 <!-- Morris.js charts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="/static/plugins/morris/morris.min.js"></script>
+<#--<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>-->
+<#--<script src="/static/plugins/morris/morris.min.js"></script>-->
+
 <!-- Sparkline -->
 <script src="/static/plugins/sparkline/jquery.sparkline.min.js"></script>
 <!-- jvectormap -->
@@ -56,6 +58,9 @@
 
 <!-- layer -->
 <script src="/static/plugins/layer/layer.js"></script>
+
+<!-- bootstrap switch -->
+<script src="/static/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 
 
 <script>

@@ -32,7 +32,7 @@
                 <ul class="treeview-menu">
                     <li><a href="/system/area/index"><i class="fa fa-leaf"></i> 行政区域</a></li>
                     <li><a href="/system/dict"><i class="fa fa-book"></i> 通用字典</a></li>
-                    <li><a href="index2.html"><i class="fa fa-navicon"></i> 系统功能</a></li>
+                    <li><a href="/system/menu/"><i class="fa fa-navicon"></i> 菜单管理</a></li>
                     <li><a href="index2.html"><i class="fa fa-warning"></i> 系统日志</a></li>
                 </ul>
             </li>

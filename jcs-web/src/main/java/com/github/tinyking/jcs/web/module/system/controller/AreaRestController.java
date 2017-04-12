@@ -1,10 +1,9 @@
 package com.github.tinyking.jcs.web.module.system.controller;
 
-import com.github.tinyking.jcs.GridDto;
+import com.github.tinyking.jcs.dto.GridDto;
 import com.github.tinyking.jcs.model.Area;
 import com.github.tinyking.jcs.service.AreaService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

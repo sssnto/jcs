@@ -1,4 +1,4 @@
-package com.github.tinyking.jcs;
+package com.github.tinyking.jcs.dto;
 
 import java.util.List;
 
@@ -10,6 +10,16 @@ public class GridDto {
     private int total;
     private int records;
     private List rows;
+
+    public GridDto() {
+    }
+
+    public GridDto(int page, int total, int records, List rows) {
+        this.page = page;
+        this.total = total;
+        this.records = records;
+        this.rows = rows;
+    }
 
     public int getPage() {
         return page;

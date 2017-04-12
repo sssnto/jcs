@@ -36,6 +36,10 @@
 <!-- layer -->
 <link rel="stylesheet" href="/static/plugins/layer/skin/default/layer.css">
 
+
+<!--boostrap switch-->
+<link rel="stylesheet" href="/static/plugins/bootstrap-switch/css/bootstrap3/bootstrap-switch.min.css">
+
 <!--自定义css-->
 <link rel="stylesheet" href="/static/css/jcs.css">
 
