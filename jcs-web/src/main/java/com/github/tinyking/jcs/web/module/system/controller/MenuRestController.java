@@ -1,7 +1,7 @@
 package com.github.tinyking.jcs.web.module.system.controller;
 
 import com.github.pagehelper.PageInfo;
-import com.github.tinyking.jcs.dto.GridDto;
+import com.github.tinyking.jcs.jqgrid.Grid;
 import com.github.tinyking.jcs.model.Menu;
 import com.github.tinyking.jcs.service.MenuService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +21,9 @@ public class MenuRestController {
     
     @ResponseBody
     @RequestMapping("table")
-    public GridDto table() {
+    public Grid table() {
         PageInfo<Menu> menuPageInfo = menuService.queryPage();
 
-        return new GridDto(1, menuPageInfo.getSize(), 1, menuPageInfo.getList());
+        return new Grid(1, menuPageInfo.getSize(), 1, menuPageInfo.getList());
     }
 }

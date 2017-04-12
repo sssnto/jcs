@@ -1,20 +1,20 @@
-package com.github.tinyking.jcs.dto;
+package com.github.tinyking.jcs.jqgrid;
 
 import java.util.List;
 
 /**
  * Created by wangjianchao1 on 2017/4/11.
  */
-public class GridDto {
+public class Grid {
     private int page;
     private int total;
     private int records;
     private List rows;
 
-    public GridDto() {
+    public Grid() {
     }
 
-    public GridDto(int page, int total, int records, List rows) {
+    public Grid(int page, int total, int records, List rows) {
         this.page = page;
         this.total = total;
         this.records = records;

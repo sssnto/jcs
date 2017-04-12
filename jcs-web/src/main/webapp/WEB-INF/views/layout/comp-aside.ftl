@@ -13,29 +13,33 @@
             </div>
         </div>
         <ul class="sidebar-menu">
-            <li class="header">导航菜单</li>
-            <li class="active">
-                <a href="/">
-                    <i class="fa fa-dashboard"></i> <span>首页</span>
-                    <span class="pull-right-container">
-              <#--<small class="label pull-right bg-green">new</small>-->
-            </span>
-                </a>
-            </li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-desktop"></i> <span>系统管理</span>
-                    <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="/system/area/index"><i class="fa fa-leaf"></i> 行政区域</a></li>
-                    <li><a href="/system/dict"><i class="fa fa-book"></i> 通用字典</a></li>
-                    <li><a href="/system/menu/"><i class="fa fa-navicon"></i> 菜单管理</a></li>
-                    <li><a href="index2.html"><i class="fa fa-warning"></i> 系统日志</a></li>
-                </ul>
-            </li>
+            <li class="header">导航菜单</li>       
+            <@jcs_menus>
+                <#list tag_menus as menu>
+                    <li class="
+                     <#if menu.menus?? && (menu.menus?size > 0) >
+                        treeview
+                     </#if>
+                    ">
+                        <a href="${menu.link}">
+                            <i class="fa ${menu.icon}"></i> <span>${menu.name}</span>
+                        
+                    <#if menu.menus?? && (menu.menus?size > 0) >
+                        <span class="pull-right-container">
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                        </a>
+                        <ul class="treeview-menu">
+                        <#list menu.menus as m>
+                            <li><a href="${m.link}"><i class="fa ${m.icon}"></i> ${m.name}</a></li>
+                        </#list>
+                        </ul>
+                    <#else >
+                        </a>
+                    </#if>
+                    </li>
+                </#list>
+            </@jcs_menus>
         </ul>
     </section>
     <!-- /.sidebar -->

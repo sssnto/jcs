@@ -1,6 +1,6 @@
 package com.github.tinyking.jcs.web.module.system.controller;
 
-import com.github.tinyking.jcs.dto.GridDto;
+import com.github.tinyking.jcs.jqgrid.Grid;
 import com.github.tinyking.jcs.model.Area;
 import com.github.tinyking.jcs.service.AreaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,8 +30,8 @@ public class AreaRestController {
     }
 
     @RequestMapping("table")
-    public GridDto tableData(@RequestParam(value = "parentCode", defaultValue = "0") String parentCode) {
-        GridDto gridDto = new GridDto();
+    public Grid tableData(@RequestParam(value = "parentCode", defaultValue = "0") String parentCode) {
+        Grid gridDto = new Grid();
         gridDto.setPage(1);
         gridDto.setTotal(10);
 

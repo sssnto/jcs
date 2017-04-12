@@ -1,6 +1,7 @@
 package com.github.tinyking.jcs.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 public class Menu {
     @Id
@@ -131,5 +132,20 @@ public class Menu {
      */
     public void setYn(Boolean yn) {
         this.yn = yn;
+    }
+
+
+ 
+
+    // 
+    @Transient
+    private List<Menu> menus;
+    
+    public List<Menu> getMenus() {
+        return menus;
+    }
+
+    public void setMenus(List<Menu> menus) {
+        this.menus = menus;
     }
 }
