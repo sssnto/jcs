@@ -70,8 +70,4 @@
 </section>
 <!-- /.content -->
 
-<#include "dict-add.ftl">
-<#include "dict-edit.ftl">
-<#include "dict-view.ftl">
-
 <script type="text/javascript" src="/static/js/module/system/menu-index.js"></script>

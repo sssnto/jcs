@@ -508,4 +508,4 @@
 <!-- /.content -->
 
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="/static/js/pages/dashboard.js"></script>
+<#--<script src="/static/js/pages/dashboard.js"></script>-->

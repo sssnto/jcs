@@ -50,6 +50,9 @@
 <script src="/static/plugins/jQgrid/js/jquery.jqGrid.min.js"></script>
 <script src="/static/plugins/jQgrid/js/i18n/grid.locale-cn.js"></script>
 
+<#--<script src="/static/plugins/form/jquery.form.min.js"></script>-->
+
+
 <!-- AdminLTE for demo purposes -->
 <script src="/static/js/demo.js"></script>
 
